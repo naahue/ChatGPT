@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/carrito.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="carrito">
+            <form name="carrito" action="httos://formspree.io/f/xayrkvbp" method="post">
+                <label for="nombre">Nombre de quien compra: </label>
+                <input type="text" name="nombre" maxlength="40" id="nombre">
+                <br><br>
+                <label for="dni">DNI: </label>
+                <input type="text" name="dni" size="12" maxlength="18" id="dni">
+                <br><br>
+                <label for="zapatillas">Zapatillas: </label>
+                <select name="zapatillas" id="zapatillas">
+                    <option value="mushroom">Elegir</option>
+                    <option value="mushroom">ZAPATILLAS Mushroom</option>
+                    <option value="bajas">ZAPATILLAS Bajas</option>
+                    <option value="Jordan">ZAPATILLAS Jordan</option>
+                    <option value="fuertes">ZAPATILLAS Fuertes</option>
+                    <option value="jordan15">ZAPATILLAS Jordan15</option>
+                </select>
+                <br>     
+                <label for="numero">Numero / talle: </label>     
+                <select name="numero" id="numero">
+                    <option value="11">Elegir</option>
+                    <option value="11">11 US</option>
+                    <option value="12">12 US</option>
+                    <option value="13">13 US</option>
+                    <option value="14">13.5 US</option>
+                </select> 
+                <br>     
+            </form>
+        </div>
+        <br>
+        <p id="error"></p>
+        <br>
+        <input type="button" id="bl" value="Enviar" onclick="validarEnvio()">
+    </main>
+    <!-- <script src="../static/js/validar.js"></script> -->
+    <script src="validar.js"></script>
+</body>
+</html>
